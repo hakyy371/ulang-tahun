@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #ff9a9e, #fad0c4);
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+.container {
+  margin-top: 50px;
+}
+h1 {
+  font-size: 3em;
+  animation: glow 1.5s infinite alternate;
+}
+@keyframes glow {
+  from { text-shadow: 0 0 10px #ff9a9e; }
+  to { text-shadow: 0 0 30px #ff477e; }
+}
+.cake {
+  width: 120px;
+  height: 80px;
+  background: #8d6e63;
+  margin: 20px auto;
+  border-radius: 10px;
+  position: relative;
+}
+.candle {
+  width: 20px;
+  height: 40px;
+  background: #fff;
+  margin: 0 auto;
+  position: relative;
+  top: -40px;
+  border-radius: 5px;
+}
+.flame {
+  width: 15px;
+  height: 15px;
+  background: radial-gradient(circle, yellow 60%, orange);
+  border-radius: 50%;
+  position: relative;
+  top: -20px;
+  animation: flicker 0.2s infinite;
+}
+@keyframes flicker {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.2); opacity: 0.7; }
+  100% { transform: scale(1); opacity: 1; }
+}
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  border-radius: 20px;
+  background: #ff477e;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  background: #ff1744;
+}
